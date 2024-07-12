@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://c7gwvvyygu3a8"]
+
+[node name="LoanSlot" type="PanelContainer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Bank Name:"
+
+[node name="Label2" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Loan Amount:"
+
+[node name="Label3" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Amount Remaining:"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="bank_name" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "This is test name"
+
+[node name="loan_amount" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "£10000000"
+
+[node name="amount_remaining" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "£90909090"
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Interest Rate:"
+
+[node name="Label2" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Minimum Payment:"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="interest_label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer4"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+text = "This is test name"
+
+[node name="minimum_payment_label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer4"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+text = "£10000000"

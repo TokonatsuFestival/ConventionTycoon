@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://y51i82c68q74"]
+
+[ext_resource type="Script" path="res://scenes/Main.gd" id="1_betyp"]
+[ext_resource type="PackedScene" uid="uid://dtcredtlstf1m" path="res://scenes/Main_UI.tscn" id="2_aa7pi"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="3_ggmjl"]
+[ext_resource type="Resource" uid="uid://uw1sreb05esv" path="res://scripts/bank_loans/starting_loan.tres" id="4_qilua"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_betyp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MainUi" parent="CanvasLayer" instance=ExtResource("2_aa7pi")]
+unique_name_in_owner = true
+anchors_preset = 12
+anchor_top = 1.0
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Day_NightTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.011
+autostart = true
+
+[node name="player" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_ggmjl")
+bank_loans = Array[Resource("res://scripts/bank_loans/bank_loan.gd")]([ExtResource("4_qilua")])
+
+[connection signal="timeout" from="Day_NightTimer" to="." method="_on_day_night_timer_timeout"]

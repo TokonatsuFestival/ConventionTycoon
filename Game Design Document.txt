@@ -1,0 +1,91 @@
+--- Convention Tycoon 
+-- Create conventions for people to attend 
+-- Rollercoster Tycoon? where you can set up structures, hotels, rooms etc etc 
+-- Manage various items
+	- Location of the Convention? Maybe certain areas provide an easier time compared to others
+	- Tyoe of the conventions, Anime/ Sci-Fi / History / Etc? 
+	- Where to host the Convention ? Hotel, Campsite, Field, Business Centre, Convention Centre? 
+	- Suppliers? Food Vendors, Merchandise Vendors 
+	- Entertainment? Acts? Panels? Talks? Events? Ball Pit? VAs 
+	- Budget, Loans, Ticket Prices, Hotel Accomodation, Staffing
+	 
+-- Player (This is you)
+	- Player Name
+	- Company name
+	- Convention / Festival Base Name/
+	- Number of conventions happening at the same time (This is going to be unlikely - Maybe when we include some player AI's') / throughout the year (Cavet that they do not overlap with each other.)
+	- Chance to buy another companies convention? Later / Endgame sort of deal
+	- Finances
+		- Whats in the bank
+		- Whats not in the bank e.g. Loans, Favours, etc. 
+	- Contact Book 
+		- Friends
+		- Aquantiences
+		- Vendors
+		- Suppliers
+		- Artisans
+		- Dealers
+		- VIPS / Guests / Judges 
+	
+-- Convention 
+	- Staff
+		- Gophers / Voluneteers 
+	- If it's a Hotel Based Convention - Hotel Prices (Can this be set by the player? or is this random at the time of the convention? Can this be updated by player if they have enough repatation with the hotel?)
+	- Vendors
+		- Food
+		- Merch
+	- Activities
+		- Types
+			- Panels
+			- Talks
+			- Q&A's 
+			- Demostations
+			- Parties / Balls
+			- Live Music
+		- Cost?
+			- Cost to the player to run event
+			- Cost to the attendee to go to the activity 
+		- Time / Scheduling 
+			- Do we want to include scheduling in the game? where the player has to manage time
+			- do we want to set the length of the activites that are going on? 
+		- Misc
+			- Do we want Tech Fails to randomally happen at events? (if you know you know!)
+			- Do we want real life events to affect the activity? (Makes the player make sure they organise things like First Aid / other services)
+	- Price of the Convention
+		- Single Ticket?
+		- Multiple Tickets?
+		- One Person
+		- Multiple People? 
+	- Travel to the Convention
+		- Public Transport Availability
+		- Car parks Available for people? 
+		- Is it within walking distance to public transport / city / town style locals?
+	- Types of Advertisment
+		- Social Media Presence 
+		- Newspaper / Leaflets
+		- Tv / Radio Announcements
+		
+		
+-- UI?! 
+	-- Do we want classic style? So 1/5 general UI, 4/5 Game Screen UI?
+	
+-- Game Play
+	-- How are tickets bought by the computer? 
+		-- Probability of selling a ticket on a day by day basis. 
+		-- This probability can Increase or Decrease depening on Players actions throughout?
+			-- Social Media Posts
+			-- Reputation (How well did other events go, fanisms)
+			-- Ticket Prices? (So this can be a multiplier or be part of one)
+			
+			Example.
+				Ticket Price of £65
+				Reputation: Good (midtier) 
+				We have done 10 Social Media posts between tickets opening and current date. 
+					activites that we doing (Excitement Level: Low -> High)
+					vendors that we're going to have (Need Factor: Low -> High)
+					and everything is accurate  (Accuracy Factor: Every Organised -> Nothing Organised)
+					HypeFactor = 
+				This is expected to change
+				Chance of Sale = H * R + (T/1000)
+				
+			

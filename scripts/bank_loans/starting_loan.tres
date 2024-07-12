@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="bank_loan" load_steps=2 format=3 uid="uid://uw1sreb05esv"]
+
+[ext_resource type="Script" path="res://scripts/bank_loans/bank_loan.gd" id="1_rgx8o"]
+
+[resource]
+script = ExtResource("1_rgx8o")
+bank = "Bank Of Starting Out"
+amount = 35000.0
+interest = 0.05
+amount_remaining = 35000.0
+active = true
+player_level_to_unlock = 0
+repayment_scheme = "monthly"
+locked_interest = true
