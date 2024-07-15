@@ -4,9 +4,11 @@ extends Control
 @onready var convention_name = %convention_name
 @onready var company_name = %company_name
 @onready var player_name = %player_name
+@onready var loan_ui =  %LoanUI
+@onready var current_player:player
 
-
-func open_scene(current_player:player, date:Dictionary) -> void: 
+func open_scene(c_player:player, date:Dictionary) -> void: 
+	current_player = c_player
 	player_name.text = current_player.player_name
 	update_money(current_player.money)
 	convention_name.text = current_player.convention_base_name
@@ -25,4 +27,4 @@ func _process(_delta):
 
 
 func _on_loans_pressed():
-	pass # Replace with function body.
+	loan_ui.open(current_player.get_current_bank_loans())

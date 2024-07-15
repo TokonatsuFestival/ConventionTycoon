@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://c7gwvvyygu3a8"]
+[gd_scene load_steps=2 format=3 uid="uid://c7gwvvyygu3a8"]
+
+[ext_resource type="Script" path="res://scenes/loan_slot.gd" id="1_y6mqd"]
 
 [node name="LoanSlot" type="PanelContainer"]
+script = ExtResource("1_y6mqd")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
@@ -36,16 +39,19 @@ layout_mode = 2
 size_flags_horizontal = 8
 
 [node name="bank_name" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
 text = "This is test name"
 
 [node name="loan_amount" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
 text = "£10000000"
 
 [node name="amount_remaining" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
 text = "£90909090"

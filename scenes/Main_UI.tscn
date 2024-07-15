@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dtcredtlstf1m"]
+[gd_scene load_steps=3 format=3 uid="uid://dtcredtlstf1m"]
 
 [ext_resource type="Script" path="res://scenes/Main_UI.gd" id="1_31uvy"]
+[ext_resource type="PackedScene" uid="uid://dg8nwrmfkwufg" path="res://scenes/loan_ui.tscn" id="2_gsa3i"]
 
 [node name="MainUi" type="Control"]
 layout_mode = 3
@@ -13,18 +14,21 @@ script = ExtResource("1_31uvy")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="LoanUI" type="PanelContainer" parent="CanvasLayer"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 316.0
-offset_top = -618.0
-offset_right = 887.0
-offset_bottom = -186.0
-grow_vertical = 0
-
-[node name="Loan_list" type="GridContainer" parent="CanvasLayer/LoanUI"]
-layout_mode = 2
+[node name="LoanUI" parent="CanvasLayer" instance=ExtResource("2_gsa3i")]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -285.5
+offset_top = -216.0
+offset_right = 285.5
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="UIContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -32,7 +36,7 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -151.0
+offset_top = -152.0
 grow_horizontal = 2
 grow_vertical = 0
 
